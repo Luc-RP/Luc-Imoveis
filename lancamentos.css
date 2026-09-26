@@ -50,3 +50,14 @@
 
 /* Aviso de procedência discreto, sem faixa de prévia. */
 .catalog-heading .catalog-data-note{margin-top:12px;max-width:690px;color:#748978;font-size:11px;line-height:1.65}
+
+/* Navegação entre todas as categorias, compartilhada com Novidades. */
+.catalog-category-tabs{display:flex;flex-wrap:wrap;gap:9px;margin:31px 0 2px}
+.catalog-category-tabs a{display:inline-flex;align-items:center;min-height:42px;padding:10px 17px;border-radius:8px;border:1px solid #d5e5d4;background:#fff;color:#3e6950;font-size:12px;font-weight:800;transition:background .18s,color .18s}
+.catalog-category-tabs a:hover{background:#eaf3e8}
+.catalog-category-tabs a.current{background:#153f30;border-color:#153f30;color:#fff}
+.catalog-category-tabs+.catalog-heading{margin-top:31px}
+.catalog-current-category{justify-content:center;gap:5px}
+.catalog-current-category strong{color:#214b33;font:800 15px Manrope,Arial,sans-serif;letter-spacing:normal}
+.catalog-current-category a{font-size:11px;font-weight:700;color:#3d7957;letter-spacing:normal;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:560px){.catalog-category-tabs{gap:7px}.catalog-category-tabs a{padding:9px 12px;font-size:11px}}
