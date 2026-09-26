@@ -1,37 +1,33 @@
 # LUC Imóveis
 
-Site privado de pesquisa e curadoria imobiliária com identidade visual industrial em verde. Este repositório pertence à organização Luc-RP, mas é independente dos demais projetos da organização.
+Primeira versão demonstrativa do site LUC Imóveis: identidade visual industrial em verde, busca ilustrativa de galpões e estúdios em Indaiatuba (SP) e layout responsivo. Este projeto é independente dos demais projetos da organização Luc-RP.
 
-## Primeira tela implementada
+## Prévia no GitHub Pages
 
-- Marca **LUC Imóveis**, navegação **Alugar, Comprar, Lançamentos, Descobrir e Anúncios** e botões visuais **Criar conta** e **Entrar**.
-- Busca demonstrativa por finalidade, localização, tipo de imóvel e área mínima, com exemplos fictícios de galpões e estúdios em Indaiatuba (SP).
-- Layout responsivo para computador e celular, com ilustrações próprias em estilo industrial.
-- Links e botões de funcionalidades futuras identificados como **em desenvolvimento**.
+O repositório foi tornado **público** para que a primeira tela possa ser visualizada gratuitamente pelo GitHub Pages, sem Codespaces e sem consumir recursos da Vercel.
 
-> **Importante:** os imóveis, características e preços exibidos são apenas ilustrativos. Não representam anúncios reais. Ainda não há banco de dados, autenticação, painel administrativo ou bot.
+**Configuração inicial a fazer no GitHub, por um administrador do repositório:**
 
-## Visualizar privadamente pelo GitHub Codespaces
+1. Abra `https://github.com/Luc-RP/Luc-Imoveis/settings/pages`.
+2. Em **Build and deployment → Source**, selecione **Deploy from a branch**.
+3. Em **Branch**, escolha **main** e a pasta **/(root)**.
+4. Clique em **Save** e acompanhe o primeiro deploy na aba **Actions**.
+5. Quando a publicação terminar, abra **https://luc-rp.github.io/Luc-Imoveis/** ou use o botão **Visit site** da tela Pages. O endereço só funcionará depois da ativação e conclusão do deploy.
 
-1. No GitHub, abra este repositório privado e clique em **Code → Codespaces → Create codespace on main**.
-2. Aguarde a criação do ambiente. O arquivo `.devcontainer/devcontainer.json` prepara automaticamente um servidor HTTP para a primeira tela na **porta 3000**.
-3. No Codespaces, acesse a aba **Ports**. Confirme que a porta **3000** está com visibilidade **Private**, não Public; se necessário, altere a visibilidade para Private.
-4. Clique no endereço encaminhado da porta 3000 e escolha **Open in Browser** para visualizar a página inicial.
-5. Ao terminar, pare ou exclua o Codespace para evitar consumo desnecessário de horas e armazenamento do GitHub.
+A partir dessa configuração, alterações publicadas na `main` serão refletidas no endereço do GitHub Pages. O arquivo `.nojekyll` permite servir os arquivos estáticos diretamente.
 
-Alternativa local: na raiz do repositório, execute `python3 -m http.server 3000` e abra `http://localhost:3000` no navegador.
+**Atenção:** o repositório e a página do GitHub Pages são públicos. Não cadastre senhas, tokens, contatos reais de clientes, dados internos ou imóveis cuja publicação não tenha sido autorizada. O futuro painel administrativo e o bot precisarão de infraestrutura e autenticação separadas; **GitHub Pages hospeda apenas conteúdo estático**.
 
-## Estrutura
+## O que já existe
 
-- `index.html` — página inicial e estrutura acessível.
-- `styles.css` — identidade visual e adaptação para dispositivos móveis.
-- `app.js` — interações da navegação e dos filtros **somente demonstrativos**.
-- `.devcontainer/devcontainer.json` — configuração da prévia privada no Codespaces.
+- `index.html` — primeira tela do site com a marca **LUC Imóveis**, menu **Alugar, Comprar, Lançamentos, Descobrir e Anúncios** e busca demonstrativa por finalidade, localização, tipo e área mínima.
+- `styles.css` — layout industrial verde, com versões para computador e celular.
+- `app.js` — interações de navegação e filtragem dos **exemplos fictícios**.
+- `.nojekyll` — arquivo de configuração para a publicação estática no GitHub Pages.
+- `.devcontainer/devcontainer.json` — configuração alternativa de Codespaces, não necessária para o Pages.
 
-## Próximas etapas planejadas
+## Etapas futuras
 
-- Área administrativa com autenticação para cadastrar e editar anúncios manualmente.
-- Integração futura com bot apenas por fontes e meios de acesso permitidos.
-- Cadastro voluntário para possíveis notificações por e-mail e WhatsApp, com consentimento e controles de privacidade.
+Área administrativa com autenticação para cadastrar e editar anúncios, integração do bot por fontes e métodos de acesso autorizados e notificações opcionais por e-mail e WhatsApp mediante consentimento.
 
-A Vercel fica reservada para uma etapa posterior; nenhum deploy foi feito. Não armazene senhas, tokens ou dados pessoais no código. O Viva Real foi utilizado somente como referência estrutural, sem copiar sua marca ou conteúdo.
+**Estado atual:** primeira tela demonstrativa salva no GitHub. Os anúncios e preços exibidos são fictícios; ainda não existe busca em banco de dados, login funcional, área administrativa nem bot. O Pages ainda precisa ser ativado nas configurações do repositório. O Viva Real foi usado somente como referência estrutural, sem copiar marca ou conteúdo.
