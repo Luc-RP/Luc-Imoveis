@@ -69,7 +69,8 @@
     const local = document.getElementById('location').value.trim();
     if (tipo !== 'todos' && !destinos[tipo]) parametros.set('tipo',tipo);
     if (area !== '0') parametros.set('area',area);
-    if (local && !/^indaiatuba(?:,?\\s*sp)?$/i.test(local)) {
+    const cidadeNormalizada = local.toLowerCase().replaceAll(" ", "");
+    if (local && !["indaiatuba","indaiatuba,sp","indaiatubasp"].includes(cidadeNormalizada)) {
       // Aceita bairro específico ou outra cidade, que exibirá zero resultados se não cadastrada.
       parametros.set('bairro',local.split(',')[0].trim());
     }
