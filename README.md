@@ -1,4 +1,4 @@
-# Luke Imóveis
+# LUC Imóveis
 
 Site de pesquisa e curadoria imobiliária com identidade visual industrial, cor verde e desenvolvimento privado. Este repositório pertence à organização Luc-RP, mas o projeto é independente dos outros projetos da organização.
 
@@ -20,4 +20,4 @@ Site de pesquisa e curadoria imobiliária com identidade visual industrial, cor 
 
 O repositório permanece privado. A prévia de desenvolvimento poderá ser feita pelo GitHub Codespaces; a Vercel fica reservada para uma etapa posterior. Não armazenar senhas, tokens ou dados pessoais no código.
 
-**Situação:** requisitos documentados; interface, autenticação, painel e bot ainda não implementados.
+**Situação:** requisitos documentados; a primeira tela é uma prévia visual estática, e a autenticação, o painel e o bot ainda não foram implementados.
