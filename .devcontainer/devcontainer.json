@@ -1,0 +1,13 @@
+{
+  "name": "LUC Imóveis - prévia privada",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Prévia privada - LUC Imóveis",
+      "onAutoForward": "notify",
+      "visibility": "private"
+    }
+  },
+  "postStartCommand": "nohup python3 -m http.server 3000 --bind 0.0.0.0 > /tmp/luc-imoveis-preview.log 2>&1 < /dev/null &"
+}
