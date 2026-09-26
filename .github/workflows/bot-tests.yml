@@ -1,0 +1,30 @@
+name: Bot - testes
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'bot/**'
+      - '.github/workflows/bot-tests.yml'
+  pull_request:
+    paths:
+      - 'bot/**'
+      - '.github/workflows/bot-tests.yml'
+permissions:
+  contents: read
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Testar bot
+        run: python -m unittest discover -s bot/testes -v
+      - name: Testar importação e exportação demonstrativa
+        run: |
+          python bot/luc_bot.py --banco /tmp/luc-bot-demo.sqlite3 importar --arquivo bot/exemplos/entrada_exemplo.csv
+          python bot/luc_bot.py --banco /tmp/luc-bot-demo.sqlite3 listar
+          python bot/luc_bot.py --banco /tmp/luc-bot-demo.sqlite3 exportar --saida /tmp/luc-bot-demo.json
+          python -c "import json; d=json.load(open('/tmp/luc-bot-demo.json')); assert d['imoveis'] == []"
