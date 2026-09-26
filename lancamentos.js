@@ -30,7 +30,7 @@ function cardFor(imovel,position){
   const artwork = document.createElement("div");
   artwork.className = "catalog-art";
   const status = document.createElement("span");
-  status.textContent = "REFERÊNCIA · ALUGUEL";
+  status.textContent = "NOVO NO SITE · ALUGUEL";
   const number = document.createElement("small");
   number.textContent = String(position).padStart(2,"0") + " / 10";
   artwork.append(status,number);
@@ -85,7 +85,7 @@ function render(){
   if(sortControl.value==="maior-area") filtered.sort((a,b)=>b.area-a.area);
   container.replaceChildren(...filtered.map((item,index)=>cardFor(item,index+1)));
   empty.hidden=filtered.length>0;
-  count.textContent=filtered.length+" de 10 referências exibidas";
+  count.textContent=filtered.length+" de 10 imóveis exibidos";
 }
 [typeControl,neighborhoodControl,areaControl,sortControl].forEach(el=>{
   el.addEventListener(el===neighborhoodControl?"input":"change",render);
