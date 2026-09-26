@@ -30,7 +30,7 @@ A partir dessa configuração, alterações publicadas na `main` serão refletid
 
 Área administrativa com autenticação para cadastrar e editar anúncios, integração do bot por fontes e métodos de acesso autorizados e notificações opcionais por e-mail e WhatsApp mediante consentimento.
 
-**Estado atual:** primeira tela demonstrativa salva no GitHub. Os dez registros em Novidades têm referências de terceiros ainda não verificadas; ainda não existe busca em banco de dados, login funcional, área administrativa nem bot. A página Novidades possui dez registros externos para apresentação, com valores, áreas e disponibilidade ainda não validados. O Viva Real foi usado somente como referência estrutural, sem copiar marca ou conteúdo.
+**Estado atual:** primeira tela demonstrativa salva no GitHub. Os dez registros em Novidades têm referências de terceiros ainda não verificadas; o bot de curadoria v0.1 já existe em bot/, com banco SQLite local; o site ainda não o consulta automaticamente e não há login ou área administrativa. A página Novidades possui dez registros externos para apresentação, com valores, áreas e disponibilidade ainda não validados. O Viva Real foi usado somente como referência estrutural, sem copiar marca ou conteúdo.
 
 ## Novidades
 
@@ -46,3 +46,10 @@ Os três cartões de **Espaços para cada projeto** na home agora são links ind
 - `novidades.html`: todos os registros, com filtro por tipo de imóvel.
 
 As quatro páginas compartilham `catalogo.js` e `lancamentos.css` para mostrar os mesmos registros, sem copiar anúncios entre arquivos. O filtro usa a categoria explícita de cada registro (ou seu título quando não há categoria reconhecida) e também permite pesquisar bairro, área mínima e ordem. A pesquisa da home abre a categoria escolhida com os filtros na URL. Novos imóveis inseridos no catálogo passam a aparecer em suas categorias automaticamente. **Atualmente há oito galpões, dois salões/pontos comerciais e nenhum estúdio nas dez referências iniciais.** A página de estúdios exibe uma mensagem de catálogo vazio, sem inventar ofertas. Os dados e a disponibilidade das referências ainda exigem verificação na origem.
+
+
+## Bot de curadoria v0.1
+
+O núcleo inicial foi criado em `bot/luc_bot.py`. Ele importa CSV fornecido manualmente ou por feeds autorizados, valida somente galpões/estúdios/espaços comerciais, reconhece URLs repetidas, registra possíveis imóveis duplicados para revisão, mantém os dados em SQLite **local** e exporta JSON só de registros com direito de publicação confirmado e aprovação explícita. Ainda **não** faz scraping, monitoramento de portais ou publicação automática no GitHub Pages. O catálogo público atual permanece inalterado.
+
+Instruções: [bot/README.md](bot/README.md). Testes: [GitHub Actions — Bot - testes](https://github.com/Luc-RP/Luc-Imoveis/actions/workflows/bot-tests.yml).
