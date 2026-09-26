@@ -1,0 +1,5 @@
+fonte;url;titulo;cidade;bairro;tipo;finalidade;area_m2;preco_brl;publicacao_autorizada
+Demonstração;https://example.invalid/imoveis/galpao-01;Galpão de exemplo;Indaiatuba;Centro;galpão;alugar;220;3500,00;não
+Demonstração;https://example.invalid/imoveis/galpao-01?utm_source=teste;Galpão repetido;Indaiatuba;Centro;galpão;alugar;220;3500,00;não
+Demonstração;https://example.invalid/imoveis/studio-02;Estúdio ilustrativo;Indaiatuba;Jardim Morada do Sol;estúdio;alugar;85;2100,00;não
+Demonstração;https://example.invalid/imoveis/sala-03;Sala comercial de exemplo;Indaiatuba;Centro;sala comercial;alugar;44;1800,00;não
