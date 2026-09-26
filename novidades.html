@@ -8,9 +8,9 @@
   <title>Novidades | LUC Imóveis</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="lancamentos.css">
-  <script src="lancamentos.js" defer></script>
+  <script src="catalogo.js" defer></script>
 </head>
-<body>
+<body data-categoria="todos">
   <a class="skip-link" href="#catalog-main">Ir para os imóveis</a>
   <header class="site-header">
     <div class="header-inner container">
@@ -38,6 +38,12 @@
       </div>
     </section>
     <section class="catalog-main container" aria-labelledby="catalog-list-title">
+      <nav class="catalog-category-tabs" aria-label="Explorar tipos de imóvel">
+        <a href="novidades.html" class="current" aria-current="page">Todos</a>
+        <a href="galpoes.html">Galpões</a>
+        <a href="estudios.html">Estúdios</a>
+        <a href="salas-comerciais.html">Salas comerciais</a>
+      </nav>
       <div class="catalog-heading">
         <div><span class="section-kicker">ATUALIZAÇÕES DO CATÁLOGO</span><h2 id="catalog-list-title">Últimos adicionados<span class="green-period">.</span></h2><p>Encontre novos registros no nosso site e filtre por bairro, tipo de imóvel ou metragem.</p><p class="catalog-data-note">Informações de anúncios externos ainda não verificadas. Preços, áreas, links e disponibilidade podem ter mudado. Consulte o anúncio original antes de tomar qualquer decisão.</p></div>
       </div>
@@ -46,7 +52,7 @@
           <input type="search" id="catalog-bairro" placeholder="Buscar bairro" autocomplete="off">
         </label>
         <label class="catalog-control" for="catalog-type">TIPO DE IMÓVEL
-          <select id="catalog-type"><option value="todos">Todos os tipos</option><option value="galpao">Galpões</option><option value="comercial">Salões comerciais</option></select>
+          <select id="catalog-type"><option value="todos">Todos os tipos</option><option value="galpao">Galpões</option><option value="estudio">Estúdios</option><option value="comercial">Salas e salões comerciais</option><option value="terreno">Terrenos</option></select>
         </label>
         <label class="catalog-control" for="catalog-area">ÁREA MÍNIMA
           <select id="catalog-area"><option value="0">Qualquer área</option><option value="100">100 m²</option><option value="200">200 m²</option><option value="300">300 m²</option><option value="500">500 m²</option><option value="1000">1.000 m²</option><option value="1500">1.500 m²</option><option value="2000">2.000 m²</option></select>
