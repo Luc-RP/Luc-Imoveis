@@ -53,15 +53,29 @@
     searchType.value = link.dataset.category;
   }));
 
-  // A seção de resultados fictícios foi removida a pedido do proprietário.
-  // Mantemos os controles visuais e informamos que ainda não existe uma busca real.
+  // A busca da home usa as páginas reais de categoria e os filtros do catálogo local.
+  // Ainda não consulta anúncios externos em tempo real nem busca um banco de dados.
   searchForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    const typeLabel = searchType.options[searchType.selectedIndex].text;
-    const minimum = searchArea.value === '0'
-      ? 'qualquer área'
-      : `área mínima de ${searchArea.options[searchArea.selectedIndex].text}`;
-    showComingSoon(`Você selecionou ${typeLabel.toLowerCase()}, ${minimum}. A busca de anúncios reais ainda está em desenvolvimento. Nenhum imóvel ou cadastro foi consultado.`);
+    const destinos = {
+      galpao: 'galpoes.html',
+      estudio: 'estudios.html',
+      comercial: 'salas-comerciais.html'
+    };
+    const tipo = searchType.value;
+    const destino = destinos[tipo] || 'novidades.html';
+    const parametros = new URLSearchParams();
+    const area = searchArea.value;
+    const local = document.getElementById('location').value.trim();
+    if (tipo !== 'todos' && !destinos[tipo]) parametros.set('tipo',tipo);
+    if (area !== '0') parametros.set('area',area);
+    if (local && !/^indaiatuba(?:,?\\s*sp)?$/i.test(local)) {
+      // Aceita bairro específico ou outra cidade, que exibirá zero resultados se não cadastrada.
+      parametros.set('bairro',local.split(',')[0].trim());
+    }
+    if (purpose !== 'alugar') parametros.set('finalidade',purpose);
+    const query = parametros.toString();
+    window.location.assign(destino+(query?'?'+query:''));
   });
 
   document.querySelectorAll('[data-coming-soon]').forEach((control) => control.addEventListener('click', (event) => {
