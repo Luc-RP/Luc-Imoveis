@@ -35,3 +35,14 @@ A partir dessa configuração, alterações publicadas na `main` serão refletid
 ## Novidades
 
 O menu **Novidades** abre `novidades.html`, com dez registros externos adicionados ao catálogo do site e filtros por bairro, tipo, área e ordenação. O endereço anterior (`lancamentos.html`) redireciona para a nova página. **Novidades** significa itens recém-adicionados ao LUC Imóveis, não lançamentos de empreendimentos imobiliários. Os anúncios foram usados como referências de layout e seus dados ainda exigem conferência na fonte original.
+
+## Páginas por categoria
+
+Os três cartões de **Espaços para cada projeto** na home agora são links individuais:
+
+- `galpoes.html`: galpões e barracões classificados no catálogo.
+- `estudios.html`: estúdios e studios classificados no catálogo.
+- `salas-comerciais.html`: categoria comercial, que inclui salas, salões e pontos comerciais.
+- `novidades.html`: todos os registros, com filtro por tipo de imóvel.
+
+As quatro páginas compartilham `catalogo.js` e `lancamentos.css` para mostrar os mesmos registros, sem copiar anúncios entre arquivos. O filtro usa a categoria explícita de cada registro (ou seu título quando não há categoria reconhecida) e também permite pesquisar bairro, área mínima e ordem. A pesquisa da home abre a categoria escolhida com os filtros na URL. Novos imóveis inseridos no catálogo passam a aparecer em suas categorias automaticamente. **Atualmente há oito galpões, dois salões/pontos comerciais e nenhum estúdio nas dez referências iniciais.** A página de estúdios exibe uma mensagem de catálogo vazio, sem inventar ofertas. Os dados e a disponibilidade das referências ainda exigem verificação na origem.
