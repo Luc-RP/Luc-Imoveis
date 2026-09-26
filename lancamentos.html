@@ -1,1 +1,75 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>Lançamentos | LUC Imóveis</title></head><body><h1>Lançamentos</h1><p>Página em preparação.</p><a href="index.html">Voltar ao início</a></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153f30">
+  <meta name="description" content="Vitrine experimental do LUC Imóveis: dez referências de imóveis em Indaiatuba para avaliar o visual do site.">
+  <title>Lançamentos | LUC Imóveis</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lancamentos.css">
+  <script src="lancamentos.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#catalog-main">Ir para os imóveis</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="brand" aria-label="LUC Imóveis, início">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">LUC <span>IMÓVEIS</span><small>ESPAÇOS QUE MOVEM IDEIAS</small></span>
+      </a>
+      <nav class="main-nav" id="main-menu" aria-label="Navegação principal">
+        <a class="nav-link" href="index.html#buscar">Alugar</a>
+        <a class="nav-link" href="index.html#buscar">Comprar</a>
+        <a class="nav-link active" href="lancamentos.html" aria-current="page">Lançamentos</a>
+        <a class="nav-link" href="index.html#descobrir">Descobrir</a>
+        <a class="nav-link" href="#catalog-main">Anúncios</a>
+      </nav>
+      <a href="index.html" class="login-button">Voltar ao início ↗</a>
+      <button id="catalog-mobile-button" class="catalog-mobile-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <main id="catalog-main">
+    <section class="catalog-hero" aria-labelledby="catalog-title">
+      <div class="container">
+        <span class="catalog-kicker">LUC IMÓVEIS · VITRINE EXPERIMENTAL</span>
+        <h1 id="catalog-title">Novos lugares.<br><em>Grandes possibilidades.</em></h1>
+        <p>Começamos com dez referências de galpões e espaços comerciais em Indaiatuba. Esta página é um teste do visual que os anúncios terão no LUC Imóveis.</p>
+      </div>
+    </section>
+    <section class="catalog-main container" aria-labelledby="catalog-list-title">
+      <div class="catalog-notice" role="note">
+        <strong>Prévia para avaliação do site.</strong> Estes registros de terceiros foram recuperados de uma lista preliminar e <strong>não são lançamentos imobiliários confirmados</strong>. Não verificamos novamente a existência dos anúncios, os links, os preços, as metragens nem a disponibilidade. O LUC Imóveis não representa seus anunciantes. Consulte a fonte original antes de usar qualquer informação. Não reproduzimos fotografias dos anúncios.
+      </div>
+      <div class="catalog-heading">
+        <div><span class="section-kicker">REFERÊNCIAS · CHAVES NA MÃO</span><h2 id="catalog-list-title">Imóveis em análise<span class="green-period">.</span></h2><p>Compare a apresentação dos imóveis e experimente os filtros desta primeira vitrine.</p></div>
+      </div>
+      <div class="catalog-controls" aria-label="Filtros da vitrine">
+        <label class="catalog-control" for="catalog-bairro">BAIRRO
+          <input type="search" id="catalog-bairro" placeholder="Buscar bairro" autocomplete="off">
+        </label>
+        <label class="catalog-control" for="catalog-type">TIPO DE IMÓVEL
+          <select id="catalog-type"><option value="todos">Todos os tipos</option><option value="galpao">Galpões</option><option value="comercial">Salões comerciais</option></select>
+        </label>
+        <label class="catalog-control" for="catalog-area">ÁREA MÍNIMA
+          <select id="catalog-area"><option value="0">Qualquer área</option><option value="100">100 m²</option><option value="200">200 m²</option><option value="300">300 m²</option><option value="500">500 m²</option><option value="1000">1.000 m²</option><option value="1500">1.500 m²</option><option value="2000">2.000 m²</option></select>
+        </label>
+        <label class="catalog-control" for="catalog-sort">ORDENAR
+          <select id="catalog-sort"><option value="original">Ordem de cadastro</option><option value="menor-preco">Menor preço informado</option><option value="maior-area">Maior área informada</option></select>
+        </label>
+        <output id="catalog-count" class="catalog-count" aria-live="polite">Carregando referências…</output>
+      </div>
+      <div class="catalog-grid" id="catalog-cards" aria-label="Dez referências de imóveis"></div>
+      <div id="catalog-empty" class="catalog-empty" hidden>Nenhuma referência corresponde a esses filtros. Experimente alterar o bairro, o tipo ou a área mínima.</div>
+      <noscript><div class="catalog-empty">Ative o JavaScript para visualizar as fichas demonstrativas.</div></noscript>
+      <a class="catalog-back" href="index.html">← Voltar para a página inicial</a>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner">
+    <a href="index.html" class="footer-logo">LUC <span>IMÓVEIS</span></a>
+    <span>Encontre espaço para o que vem a seguir.</span>
+    <span>© <span id="catalog-year">2026</span> LUC Imóveis · Prévia pública</span>
+    <a class="footer-admin" href="index.html">Voltar ao início ↗</a>
+  </div></footer>
+</body>
+</html>
