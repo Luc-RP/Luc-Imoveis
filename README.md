@@ -20,7 +20,7 @@ A partir dessa configuração, alterações publicadas na `main` serão refletid
 
 ## O que já existe
 
-- `index.html` — primeira tela do site com a marca **LUC Imóveis**, menu **Alugar, Comprar, Lançamentos, Descobrir e Anúncios** e busca demonstrativa por finalidade, localização, tipo e área mínima.
+- `index.html` — primeira tela do site com a marca **LUC Imóveis**, menu **Alugar, Comprar, Novidades, Descobrir e Anúncios** e busca demonstrativa por finalidade, localização, tipo e área mínima.
 - `styles.css` — layout industrial verde, com versões para computador e celular.
 - `app.js` — interações de navegação e filtragem dos **exemplos fictícios**.
 - `.nojekyll` — arquivo de configuração para a publicação estática no GitHub Pages.
@@ -30,4 +30,8 @@ A partir dessa configuração, alterações publicadas na `main` serão refletid
 
 Área administrativa com autenticação para cadastrar e editar anúncios, integração do bot por fontes e métodos de acesso autorizados e notificações opcionais por e-mail e WhatsApp mediante consentimento.
 
-**Estado atual:** primeira tela demonstrativa salva no GitHub. Os anúncios e preços exibidos são fictícios; ainda não existe busca em banco de dados, login funcional, área administrativa nem bot. O Pages ainda precisa ser ativado nas configurações do repositório. O Viva Real foi usado somente como referência estrutural, sem copiar marca ou conteúdo.
+**Estado atual:** primeira tela demonstrativa salva no GitHub. Os dez registros em Novidades têm referências de terceiros ainda não verificadas; ainda não existe busca em banco de dados, login funcional, área administrativa nem bot. A página Novidades possui dez registros externos para apresentação, com valores, áreas e disponibilidade ainda não validados. O Viva Real foi usado somente como referência estrutural, sem copiar marca ou conteúdo.
+
+## Novidades
+
+O menu **Novidades** abre `novidades.html`, com dez registros externos adicionados ao catálogo do site e filtros por bairro, tipo, área e ordenação. O endereço anterior (`lancamentos.html`) redireciona para a nova página. **Novidades** significa itens recém-adicionados ao LUC Imóveis, não lançamentos de empreendimentos imobiliários. Os anúncios foram usados como referências de layout e seus dados ainda exigem conferência na fonte original.
