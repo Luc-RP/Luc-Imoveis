@@ -23,9 +23,9 @@
       <nav class="main-nav" id="main-menu" aria-label="Navegação principal">
         <a class="nav-link active" href="#buscar" data-nav="alugar">Alugar</a>
         <a class="nav-link" href="#buscar" data-nav="comprar">Comprar</a>
-        <a class="nav-link" href="#lancamentos">Lançamentos</a>
+        <a class="nav-link" href="#inicio" data-coming-soon="lançamentos">Lançamentos</a>
         <a class="nav-link" href="#descobrir">Descobrir</a>
-        <a class="nav-link" href="#anuncios">Anúncios</a>
+        <a class="nav-link" href="#inicio" data-coming-soon="anúncios">Anúncios</a>
       </nav>
       <div class="header-actions">
         <button type="button" class="text-action" data-coming-soon="criar conta">Criar conta</button>
@@ -82,11 +82,11 @@
           <div class="search-fields">
             <label class="field field-location"><span class="field-label">LOCALIZAÇÃO</span><span class="field-control"><span class="field-icon" aria-hidden="true">⌖</span><input id="location" name="location" autocomplete="address-level2" placeholder="Cidade ou bairro" value="Indaiatuba, SP"></span></label>
             <label class="field field-type"><span class="field-label">TIPO DE IMÓVEL</span><span class="field-control"><span class="field-icon" aria-hidden="true">▤</span><select id="property-type" name="type"><option value="todos">Todos os tipos</option><option value="galpao" selected>Galpões</option><option value="estudio">Estúdios</option><option value="comercial">Salas comerciais</option><option value="terreno">Terrenos</option></select></span></label>
-            <label class="field field-area"><span class="field-label">ÁREA MÍNIMA</span><span class="field-control"><span class="field-icon" aria-hidden="true">▱</span><select id="min-area" name="min-area"><option value="0">Qualquer área</option><option value="100">100 m²</option><option value="150">150 m²</option><option value="200">200 m²</option><option value="250">250 m²</option><option value="300">300 m²</option></select></span></label>
+            <label class="field field-area"><span class="field-label">ÁREA MÍNIMA</span><span class="field-control"><span class="field-icon" aria-hidden="true">▱</span><select id="min-area" name="min-area"><option value="0">Qualquer área</option><option value="100">100 m²</option><option value="150">150 m²</option><option value="200">200 m²</option><option value="250">250 m²</option><option value="300">300 m²</option><option value="350">350 m²</option><option value="400">400 m²</option><option value="500">500 m²</option><option value="750">750 m²</option><option value="1000">1.000 m²</option><option value="1250">1.250 m²</option><option value="1500">1.500 m²</option><option value="1750">1.750 m²</option><option value="2000">2.000 m²</option></select></span></label>
             <button class="search-submit" type="submit"><span aria-hidden="true">⌕</span> Buscar imóveis</button>
           </div>
         </form>
-        <p class="search-note">Dica: comece por Indaiatuba e ajuste os filtros conforme sua necessidade. <strong>Prévia com dados ilustrativos.</strong></p>
+        <p class="search-note">Dica: comece por Indaiatuba e ajuste os filtros conforme sua necessidade. <strong>A busca de anúncios reais está em desenvolvimento.</strong></p>
       </div>
     </section>
 
@@ -98,22 +98,8 @@
         <a href="#buscar" class="category-card category-comercial" data-category="comercial"><span class="category-number">03 / COMERCIAL</span><span class="category-graphic" aria-hidden="true"><span class="commercial-block"></span><span class="commercial-lines"></span></span><span class="category-info"><strong>Salas comerciais</strong><span>Seu próximo endereço <b aria-hidden="true">↗</b></span></span></a>
       </div>
     </section>
-
-    <section class="listings-section" id="anuncios" aria-labelledby="listings-title"><div class="container">
-      <div class="section-header listings-header"><div><span class="section-kicker">OLHE COM OUTROS OLHOS</span><h2 id="listings-title">Seleção de espaços<span class="green-period">.</span></h2></div><p>Exemplos visuais para testar a primeira tela. Os anúncios reais e o bot serão integrados em etapas futuras.</p></div>
-      <div class="demo-warning"><span aria-hidden="true">ⓘ</span> IMÓVEIS ILUSTRATIVOS — estas fichas não representam ofertas reais.</div>
-      <p class="results-message" id="results-message" role="status" aria-live="polite">Exibindo exemplos de imóveis disponíveis nesta prévia.</p>
-      <div class="listing-grid" id="listing-grid">
-        <article class="listing-card" data-purpose="alugar" data-type="galpao" data-area="220" data-city="indaiatuba"><div class="listing-art art-industrial"><span class="listing-badge">EXEMPLO • ALUGUEL</span><span class="industrial-shape industrial-shape-one" aria-hidden="true"></span><span class="listing-art-label">INDUSTRIAL / 01</span></div><div class="listing-body"><span class="listing-location">⌖ Indaiatuba · SP</span><h3>Galpão industrial com pé-direito alto</h3><div class="listing-specs"><span>▱ 220 m²</span><span>◫ Galpão</span></div><div class="listing-bottom"><span>Valor ilustrativo<strong>R$ 5.800 / mês</strong></span><span class="listing-arrow" aria-hidden="true">↗</span></div></div></article>
-        <article class="listing-card" data-purpose="alugar" data-type="estudio" data-area="120" data-city="indaiatuba"><div class="listing-art art-studio"><span class="listing-badge">EXEMPLO • ALUGUEL</span><span class="industrial-shape industrial-shape-two" aria-hidden="true"></span><span class="listing-art-label">CRIATIVO / 02</span></div><div class="listing-body"><span class="listing-location">⌖ Indaiatuba · SP</span><h3>Estúdio amplo para projetos criativos</h3><div class="listing-specs"><span>▱ 120 m²</span><span>◫ Estúdio</span></div><div class="listing-bottom"><span>Valor ilustrativo<strong>R$ 2.600 / mês</strong></span><span class="listing-arrow" aria-hidden="true">↗</span></div></div></article>
-        <article class="listing-card" data-purpose="comprar" data-type="galpao" data-area="340" data-city="indaiatuba"><div class="listing-art art-premium"><span class="listing-badge">EXEMPLO • VENDA</span><span class="industrial-shape industrial-shape-three" aria-hidden="true"></span><span class="listing-art-label">INDUSTRIAL / 03</span></div><div class="listing-body"><span class="listing-location">⌖ Indaiatuba · SP</span><h3>Galpão com fachada contemporânea</h3><div class="listing-specs"><span>▱ 340 m²</span><span>◫ Galpão</span></div><div class="listing-bottom"><span>Valor ilustrativo<strong>R$ 1.450.000</strong></span><span class="listing-arrow" aria-hidden="true">↗</span></div></div></article>
-      </div>
-      <div class="empty-state" id="empty-state" hidden><strong>Nenhum exemplo corresponde aos filtros.</strong><p>A busca real será conectada ao cadastro de imóveis em uma próxima etapa. Experimente mudar os filtros.</p><a href="#buscar">Alterar busca ↗</a></div>
-    </div></section>
-
-    <section class="launch-section container" id="lancamentos"><div class="launch-panel"><span class="section-kicker">EM BREVE</span><div><h2>Novos espaços.<br><em>Novas possibilidades.</em></h2><p>Uma área dedicada a lançamentos e imóveis recém-cadastrados está no nosso planejamento.</p></div><a href="#buscar">Explorar imóveis <span aria-hidden="true">↗</span></a><span class="launch-outline" aria-hidden="true">LUC</span></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><a href="#inicio" class="footer-logo">LUC <span>IMÓVEIS</span></a><span>Encontre espaço para o que vem a seguir.</span><span>© <span id="year">2026</span> LUC Imóveis · Prévia privada</span><button type="button" class="footer-admin" data-coming-soon="área administrativa">Área administrativa ↗</button></div></footer>
+  <footer class="site-footer"><div class="container footer-inner"><a href="#inicio" class="footer-logo">LUC <span>IMÓVEIS</span></a><span>Encontre espaço para o que vem a seguir.</span><span>© <span id="year">2026</span> LUC Imóveis · Prévia pública</span><button type="button" class="footer-admin" data-coming-soon="área administrativa">Área administrativa ↗</button></div></footer>
   <dialog id="soon-dialog" class="soon-dialog" aria-labelledby="soon-title"><form method="dialog"><button class="close-dialog" aria-label="Fechar">×</button><span class="section-kicker">PRÓXIMA ETAPA</span><h2 id="soon-title">Em desenvolvimento</h2><p id="soon-description">Essa funcionalidade será implementada nas próximas etapas.</p><button class="dialog-okay" value="close">Entendi</button></form></dialog>
 </body>
 </html>
