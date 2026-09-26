@@ -1,0 +1,13 @@
+# Banco e dados de clientes não devem ser publicados no repositório público.
+bot/.local/
+bot/saida/
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-wal
+*.sqlite3-shm
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
