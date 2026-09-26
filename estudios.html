@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153f30">
+  <meta name="description" content="Estúdios cadastrados no LUC Imóveis em Indaiatuba, com filtros de bairro e área.">
+  <title>Estúdios | LUC Imóveis</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="lancamentos.css">
+  <script src="catalogo.js" defer></script>
+</head>
+<body data-categoria="estudio">
+  <a class="skip-link" href="#catalog-main">Ir para os imóveis</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="brand" aria-label="LUC Imóveis, início">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">LUC <span>IMÓVEIS</span><small>ESPAÇOS QUE MOVEM IDEIAS</small></span>
+      </a>
+      <nav class="main-nav" id="main-menu" aria-label="Navegação principal">
+        <a class="nav-link" href="index.html#buscar">Alugar</a>
+        <a class="nav-link" href="index.html#buscar">Comprar</a>
+        <a class="nav-link" href="novidades.html">Novidades</a>
+        <a class="nav-link" href="index.html#descobrir">Descobrir</a>
+        <a class="nav-link" href="#catalog-main">Anúncios</a>
+      </nav>
+      <a href="index.html" class="login-button">Voltar ao início ↗</a>
+      <button id="catalog-mobile-button" class="catalog-mobile-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <main id="catalog-main">
+    <section class="catalog-hero" aria-labelledby="catalog-title">
+      <div class="container">
+        <span class="catalog-kicker">LUC IMÓVEIS · ESTÚDIOS</span>
+        <h1 id="catalog-title">Estúdios para<br><em>tirar ideias do papel.</em></h1>
+        <p>Encontre estúdios e studios cadastrados no LUC Imóveis. Quando novas opções chegarem, aparecerão nesta categoria.</p>
+      </div>
+    </section>
+    <section class="catalog-main container" aria-labelledby="catalog-list-title">
+      <nav class="catalog-category-tabs" aria-label="Explorar tipos de imóvel">
+        <a href="novidades.html">Todos</a>
+        <a href="galpoes.html">Galpões</a>
+        <a href="estudios.html" class="current" aria-current="page">Estúdios</a>
+        <a href="salas-comerciais.html">Salas comerciais</a>
+      </nav>
+
+      <div class="catalog-heading">
+        <div><span class="section-kicker">BUSCA POR CATEGORIA</span><h2 id="catalog-list-title">Estúdios cadastrados<span class="green-period">.</span></h2><p>Apenas imóveis classificados como estúdio ou studio; quando houver novos registros, serão exibidos aqui.</p><p class="catalog-data-note">Informações de anúncios externos ainda não verificadas. Preços, áreas, links e disponibilidade podem ter mudado. Consulte o anúncio original antes de tomar qualquer decisão.</p></div>
+      </div>
+      <div class="catalog-controls" aria-label="Filtros da vitrine">
+        <label class="catalog-control" for="catalog-bairro">BAIRRO
+          <input type="search" id="catalog-bairro" placeholder="Buscar bairro" autocomplete="off">
+        </label>
+        <div class="catalog-control catalog-current-category"><span>CATEGORIA</span><strong>Estúdios</strong><a href="novidades.html">Ver todos os imóveis ↗</a></div>
+        <label class="catalog-control" for="catalog-area">ÁREA MÍNIMA
+          <select id="catalog-area"><option value="0">Qualquer área</option><option value="100">100 m²</option><option value="200">200 m²</option><option value="300">300 m²</option><option value="500">500 m²</option><option value="1000">1.000 m²</option><option value="1500">1.500 m²</option><option value="2000">2.000 m²</option></select>
+        </label>
+        <label class="catalog-control" for="catalog-sort">ORDENAR
+          <select id="catalog-sort"><option value="original">Ordem de cadastro</option><option value="menor-preco">Menor preço informado</option><option value="maior-area">Maior área informada</option></select>
+        </label>
+        <output id="catalog-count" class="catalog-count" aria-live="polite">Carregando estúdios…</output>
+      </div>
+      <div class="catalog-grid" id="catalog-cards" aria-label="Estúdios adicionados ao catálogo"></div>
+      <div id="catalog-empty" class="catalog-empty" hidden>Ainda não temos estúdios cadastrados.</div>
+      <noscript><div class="catalog-empty">Ative o JavaScript para visualizar os imóveis.</div></noscript>
+      <a class="catalog-back" href="index.html">← Voltar para a página inicial</a>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner">
+    <a href="index.html" class="footer-logo">LUC <span>IMÓVEIS</span></a>
+    <span>Encontre espaço para o que vem a seguir.</span>
+    <span>© <span id="catalog-year">2026</span> LUC Imóveis</span>
+    <a class="footer-admin" href="index.html">Voltar ao início ↗</a>
+  </div></footer>
+</body>
+</html>
