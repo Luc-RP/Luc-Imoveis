@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153f30">
+  <meta name="description" content="LUC Imóveis: um novo jeito de explorar galpões, estúdios e espaços com potencial.">
+  <title>LUC Imóveis | Espaço para o próximo passo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a href="#inicio" class="brand" aria-label="LUC Imóveis, início">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-name">LUC <span>IMÓVEIS</span><small>ESPAÇOS QUE MOVEM IDEIAS</small></span>
+      </a>
+      <button class="mobile-menu-button" id="menu-button" type="button" aria-label="Abrir menu" aria-controls="main-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-menu" aria-label="Navegação principal">
+        <a class="nav-link active" href="#buscar" data-nav="alugar">Alugar</a>
+        <a class="nav-link" href="#buscar" data-nav="comprar">Comprar</a>
+        <a class="nav-link" href="#lancamentos">Lançamentos</a>
+        <a class="nav-link" href="#descobrir">Descobrir</a>
+        <a class="nav-link" href="#anuncios">Anúncios</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="text-action" data-coming-soon="criar conta">Criar conta</button>
+        <button type="button" class="login-button" data-coming-soon="entrar"><span class="login-icon" aria-hidden="true">↗</span> Entrar</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-illustration" aria-hidden="true">
+        <div class="illustration-grid"></div>
+        <svg class="warehouse-art" viewBox="0 0 850 650" xmlns="http://www.w3.org/2000/svg" fill="none" role="presentation">
+          <defs><linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#a8b2a7"/><stop offset="1" stop-color="#667c70"/></linearGradient><linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#719187"/><stop offset="1" stop-color="#203e36"/></linearGradient></defs>
+          <path d="M100 355 484 198l306 106-381 171z" fill="#38564c" opacity=".44"/>
+          <path d="M133 336 487 208l265 98-348 141z" fill="#d9ded5"/>
+          <path d="m133 336 272 111v151L133 489z" fill="url(#wall)"/>
+          <path d="m405 447 347-141v168L405 598z" fill="#b2bdb2"/>
+          <path d="m148 356 257 105M148 383l257 105M148 410l257 105M148 437l257 105M148 464l257 105" stroke="#82968a" stroke-width="2" opacity=".54"/>
+          <path d="m429 465 300-124M429 488l300-124M429 511l300-124M429 534l300-124M429 557l300-124" stroke="#8e9d91" stroke-width="2" opacity=".6"/>
+          <path d="m180 401 178 72v111l-178-69z" fill="#263f37"/>
+          <path d="m190 418 159 64v89l-159-61z" fill="url(#glass)"/>
+          <path d="m190 442 159 64M190 468l159 64M190 493l159 63" stroke="#a0b6a9" stroke-width="3" opacity=".65"/>
+          <path d="m260 447 0 98" stroke="#a0b6a9" stroke-width="3" opacity=".7"/>
+          <path d="m485 466 211-87v151l-211 78z" fill="#435f54"/>
+          <path d="m497 472 188-77v123l-188 72z" fill="url(#glass)"/>
+          <path d="m497 497 188-77M497 523l188-77M497 548l188-77" stroke="#9fb3a5" stroke-width="3" opacity=".6"/>
+          <path d="M590 434v120" stroke="#a9bcae" stroke-width="3" opacity=".68"/>
+          <path d="m107 494 290 114 376-143" stroke="#e6e7dc" stroke-width="5" opacity=".65"/>
+          <path d="M87 510h65M625 577h95M67 525h32" stroke="#c7d3c8" stroke-width="4" stroke-linecap="square" opacity=".75"/>
+          <circle cx="663" cy="190" r="66" fill="#b0c2a6" opacity=".17"/>
+          <path d="M760 130v64m-32-32h64M80 205v42m-21-21h42" stroke="#b9d1bc" stroke-width="2" opacity=".7"/>
+        </svg>
+        <div class="art-caption"><span class="art-caption-line"></span> ARQUITETURA · POTENCIAL · FUTURO</div>
+      </div>
+      <div class="container hero-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> SEU PRÓXIMO ESPAÇO COMEÇA AQUI</div>
+        <h1 id="hero-title">O espaço certo<br>para <em>grandes ideias.</em></h1>
+        <p>Encontre galpões, estúdios e imóveis que acompanham a sua próxima conquista. Explore novas possibilidades em Indaiatuba e região.</p>
+        <div class="hero-highlights"><span><i aria-hidden="true"></i> Curadoria inteligente</span><span><i aria-hidden="true"></i> Espaços com potencial</span></div>
+      </div>
+      <div class="hero-index" aria-hidden="true">01 <span>/</span> 03</div>
+    </section>
+
+    <section class="search-overlap container" id="buscar" aria-labelledby="search-title">
+      <div class="search-panel">
+        <div class="search-heading"><div><span class="section-kicker">ENCONTRE O SEU LUGAR</span><h2 id="search-title">O que você procura hoje?</h2></div><span class="search-decoration" aria-hidden="true">⌁</span></div>
+        <form id="search-form" novalidate>
+          <div class="purpose-tabs" role="group" aria-label="Finalidade da busca">
+            <button type="button" class="purpose-tab selected" data-purpose="alugar" aria-pressed="true">Alugar</button>
+            <button type="button" class="purpose-tab" data-purpose="comprar" aria-pressed="false">Comprar</button>
+            <button type="button" class="purpose-tab" data-purpose="novo" aria-pressed="false">Imóvel novo</button>
+          </div>
+          <div class="search-fields">
+            <label class="field field-location"><span class="field-label">LOCALIZAÇÃO</span><span class="field-control"><span class="field-icon" aria-hidden="true">⌖</span><input id="location" name="location" autocomplete="address-level2" placeholder="Cidade ou bairro" value="Indaiatuba, SP"></span></label>
+            <label class="field field-type"><span class="field-label">TIPO DE IMÓVEL</span><span class="field-control"><span class="field-icon" aria-hidden="true">▤</span><select id="property-type" name="type"><option value="todos">Todos os tipos</option><option value="galpao" selected>Galpões</option><option value="estudio">Estúdios</option><option value="comercial">Salas comerciais</option><option value="terreno">Terrenos</option></select></span></label>
+            <label class="field field-area"><span class="field-label">ÁREA MÍNIMA</span><span class="field-control"><span class="field-icon" aria-hidden="true">▱</span><select id="min-area" name="min-area"><option value="0">Qualquer área</option><option value="100">100 m²</option><option value="150">150 m²</option><option value="200">200 m²</option><option value="250">250 m²</option><option value="300">300 m²</option></select></span></label>
+            <button class="search-submit" type="submit"><span aria-hidden="true">⌕</span> Buscar imóveis</button>
+          </div>
+        </form>
+        <p class="search-note">Dica: comece por Indaiatuba e ajuste os filtros conforme sua necessidade. <strong>Prévia com dados ilustrativos.</strong></p>
+      </div>
+    </section>
+
+    <section class="discover-section container" id="descobrir" aria-labelledby="discover-title">
+      <div class="section-header"><div><span class="section-kicker">EXPLORE POSSIBILIDADES</span><h2 id="discover-title">Espaços para cada projeto<span class="green-period">.</span></h2></div><p>Do primeiro estúdio ao próximo grande galpão, encontre um lugar que faça sentido para seus planos.</p></div>
+      <div class="category-grid">
+        <a href="#buscar" class="category-card category-galpao" data-category="galpao"><span class="category-number">01 / INDUSTRIAL</span><span class="category-graphic" aria-hidden="true"><span class="mini-roof"></span><span class="mini-building"></span><span class="mini-door"></span></span><span class="category-info"><strong>Galpões</strong><span>Espaço para crescer <b aria-hidden="true">↗</b></span></span></a>
+        <a href="#buscar" class="category-card category-estudio" data-category="estudio"><span class="category-number">02 / CRIATIVO</span><span class="category-graphic" aria-hidden="true"><span class="studio-window"></span><span class="studio-panel"></span></span><span class="category-info"><strong>Estúdios</strong><span>Ideias em movimento <b aria-hidden="true">↗</b></span></span></a>
+        <a href="#buscar" class="category-card category-comercial" data-category="comercial"><span class="category-number">03 / COMERCIAL</span><span class="category-graphic" aria-hidden="true"><span class="commercial-block"></span><span class="commercial-lines"></span></span><span class="category-info"><strong>Salas comerciais</strong><span>Seu próximo endereço <b aria-hidden="true">↗</b></span></span></a>
+      </div>
+    </section>
+
+    <section class="listings-section" id="anuncios" aria-labelledby="listings-title"><div class="container">
+      <div class="section-header listings-header"><div><span class="section-kicker">OLHE COM OUTROS OLHOS</span><h2 id="listings-title">Seleção de espaços<span class="green-period">.</span></h2></div><p>Exemplos visuais para testar a primeira tela. Os anúncios reais e o bot serão integrados em etapas futuras.</p></div>
+      <div class="demo-warning"><span aria-hidden="true">ⓘ</span> IMÓVEIS ILUSTRATIVOS — estas fichas não representam ofertas reais.</div>
+      <p class="results-message" id="results-message" role="status" aria-live="polite">Exibindo exemplos de imóveis disponíveis nesta prévia.</p>
+      <div class="listing-grid" id="listing-grid">
+        <article class="listing-card" data-purpose="alugar" data-type="galpao" data-area="220" data-city="indaiatuba"><div class="listing-art art-industrial"><span class="listing-badge">EXEMPLO • ALUGUEL</span><span class="industrial-shape industrial-shape-one" aria-hidden="true"></span><span class="listing-art-label">INDUSTRIAL / 01</span></div><div class="listing-body"><span class="listing-location">⌖ Indaiatuba · SP</span><h3>Galpão industrial com pé-direito alto</h3><div class="listing-specs"><span>▱ 220 m²</span><span>◫ Galpão</span></div><div class="listing-bottom"><span>Valor ilustrativo<strong>R$ 5.800 / mês</strong></span><span class="listing-arrow" aria-hidden="true">↗</span></div></div></article>
+        <article class="listing-card" data-purpose="alugar" data-type="estudio" data-area="120" data-city="indaiatuba"><div class="listing-art art-studio"><span class="listing-badge">EXEMPLO • ALUGUEL</span><span class="industrial-shape industrial-shape-two" aria-hidden="true"></span><span class="listing-art-label">CRIATIVO / 02</span></div><div class="listing-body"><span class="listing-location">⌖ Indaiatuba · SP</span><h3>Estúdio amplo para projetos criativos</h3><div class="listing-specs"><span>▱ 120 m²</span><span>◫ Estúdio</span></div><div class="listing-bottom"><span>Valor ilustrativo<strong>R$ 2.600 / mês</strong></span><span class="listing-arrow" aria-hidden="true">↗</span></div></div></article>
+        <article class="listing-card" data-purpose="comprar" data-type="galpao" data-area="340" data-city="indaiatuba"><div class="listing-art art-premium"><span class="listing-badge">EXEMPLO • VENDA</span><span class="industrial-shape industrial-shape-three" aria-hidden="true"></span><span class="listing-art-label">INDUSTRIAL / 03</span></div><div class="listing-body"><span class="listing-location">⌖ Indaiatuba · SP</span><h3>Galpão com fachada contemporânea</h3><div class="listing-specs"><span>▱ 340 m²</span><span>◫ Galpão</span></div><div class="listing-bottom"><span>Valor ilustrativo<strong>R$ 1.450.000</strong></span><span class="listing-arrow" aria-hidden="true">↗</span></div></div></article>
+      </div>
+      <div class="empty-state" id="empty-state" hidden><strong>Nenhum exemplo corresponde aos filtros.</strong><p>A busca real será conectada ao cadastro de imóveis em uma próxima etapa. Experimente mudar os filtros.</p><a href="#buscar">Alterar busca ↗</a></div>
+    </div></section>
+
+    <section class="launch-section container" id="lancamentos"><div class="launch-panel"><span class="section-kicker">EM BREVE</span><div><h2>Novos espaços.<br><em>Novas possibilidades.</em></h2><p>Uma área dedicada a lançamentos e imóveis recém-cadastrados está no nosso planejamento.</p></div><a href="#buscar">Explorar imóveis <span aria-hidden="true">↗</span></a><span class="launch-outline" aria-hidden="true">LUC</span></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a href="#inicio" class="footer-logo">LUC <span>IMÓVEIS</span></a><span>Encontre espaço para o que vem a seguir.</span><span>© <span id="year">2026</span> LUC Imóveis · Prévia privada</span><button type="button" class="footer-admin" data-coming-soon="área administrativa">Área administrativa ↗</button></div></footer>
+  <dialog id="soon-dialog" class="soon-dialog" aria-labelledby="soon-title"><form method="dialog"><button class="close-dialog" aria-label="Fechar">×</button><span class="section-kicker">PRÓXIMA ETAPA</span><h2 id="soon-title">Em desenvolvimento</h2><p id="soon-description">Essa funcionalidade será implementada nas próximas etapas.</p><button class="dialog-okay" value="close">Entendi</button></form></dialog>
+</body>
+</html>
