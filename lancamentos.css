@@ -47,3 +47,6 @@
 @media(max-width:800px){.catalog-mobile-toggle{display:flex;flex-direction:column;justify-content:center;gap:4px;margin-left:auto;width:38px;height:38px;padding:9px;border:1px solid #d7e7d7;background:#f4faf3;border-radius:7px}.catalog-mobile-toggle span{height:2px;background:#316146}.catalog-hero{padding:60px 0 79px}.catalog-heading{margin-top:42px}.catalog-control{flex-basis:calc(50% - 12px)}}
 @media(max-width:560px){.catalog-hero{padding:51px 0 72px}.catalog-hero p{font-size:13px}.catalog-notice{padding:17px}.catalog-heading{flex-direction:column;align-items:start}.catalog-grid{grid-template-columns:1fr}.catalog-control{flex-basis:100%}.catalog-count{flex-basis:100%}.catalog-card h3{min-height:0}.catalog-art{min-height:160px}}
 @media(prefers-reduced-motion:reduce){.catalog-card{transition:none}}
+
+/* Aviso de procedência discreto, sem faixa de prévia. */
+.catalog-heading .catalog-data-note{margin-top:12px;max-width:690px;color:#748978;font-size:11px;line-height:1.65}
